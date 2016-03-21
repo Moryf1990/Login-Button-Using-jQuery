@@ -19,15 +19,17 @@ button.on('click', function() {
 
 	else if(input1.val() === 'aaron@theironyard.com' && input2.val() !== 'password123') {
 		error3.html('Please enter a valid password');
+		error5.hide();
 		
 	}
 
 	else if(input1.val() === 'admin@google.com' && input2.val() !== 'pandas') {
 		error3.html('Please enter a valid password');
+		error5.hide();
 	}
 
 	else if(input1.val() !== 'admin@google.com' && input2.val() === 'pandas') {
-		error4.html('Please enter a valid username');
+		error1.html('Please enter a valid username');
 	}
 
 	else if(input1.val() !== 'admin@google.com' || input1.val() !== 'aaron@theironyard.com' 
