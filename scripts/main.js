@@ -23,7 +23,7 @@ button.on('click', function() {
 	}
 
 	else if(input1.val() === 'admin@google.com' && input2.val() !== 'pandas') {
-		error2.html('Please enter a valid password');
+		error3.html('Please enter a valid password');
 	}
 
 	else if(input1.val() !== 'admin@google.com' && input2.val() === 'pandas') {
