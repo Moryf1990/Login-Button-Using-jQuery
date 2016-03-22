@@ -10,39 +10,40 @@ var error5=$('.error5')
 
 button.on('click', function() {
 
-	if(input1.val() !== 'aaron@theironyard.com' && input2.val() === 'password123') {
+	if (iinput1.val()=== 'aaron@theironyard.com' && input2.val() === 'password123') {
+		window.location = 'http://www.theironyard.com';
+		error3.hide();
+	}
+
+	if(iinput1.val() === 'admin@google.com' && input2.val() === 'pandas') {
+		window.location = 'http://www.theironyard.com';
+		error3.hide();
+	}
+
+	if(iinput1.val() !== 'aaron@theironyard.com' && input2.val() === 'password123') {
 		error1.html('Please enter a valid username');
-		error1.show();
-		error5.hide();
-
+		error3.hide();
 	}
 
-	else if(input1.val() === 'aaron@theironyard.com' && input2.val() !== 'password123') {
-		error3.html('Please enter a valid password');
-		error5.hide();
-		
+	if(iinput1.val() === 'aaron@theironyard.com' && input2.val() !== 'password123') {
+		error2.html('Please enter a valid password');
+		error3.hide();
 	}
 
-	else if(input1.val() === 'admin@google.com' && input2.val() !== 'pandas') {
-		error3.html('Please enter a valid password');
-		error5.hide();
+	if(iinput1.val() === 'admin@google.com' && input2.val() !== 'pandas') {
+		error2.html('Please enter a valid password');
+		error3.hide();
 	}
 
-	else if(input1.val() !== 'admin@google.com' && input2.val() === 'pandas') {
+	if(iinput1.val() !== 'admin@google.com' && input2.val() === 'pandas') {
 		error1.html('Please enter a valid username');
+		error3.hide();
 	}
 
-	else if(input1.val() !== 'admin@google.com' || input1.val() !== 'aaron@theironyard.com' 
+	if(iinput1.val() !== 'admin@google.com' || iinput1.val() !== 'aaron@theironyard.com'
 		|| input2.val() !== 'pandas' || input2.val() !== 'password123') {
-			error5.html('Please enter a valid combination');
+			error3.html('Please enter a valid combination');
 	}
 
-	else if (input1.val()=== 'aaron@theironyard.com' && input2.val() === 'password123') {
-		window.location = 'http://www.theironyard.com';
-	}
-
-	else if(input1.val() === 'admin@google.com' && input2.val() === 'pandas') {
-		window.location = 'http://www.theironyard.com';
-	}
 
 });
